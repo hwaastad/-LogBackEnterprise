@@ -7,6 +7,7 @@ package org.waastad.schedule;
 
 import javax.ejb.Schedule;
 import javax.ejb.Singleton;
+import javax.ejb.Startup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,7 @@ import org.slf4j.LoggerFactory;
  * @author Helge Waastad <helge.waastad@waastad.org>
  */
 @Singleton
+//@Startup
 public class BusinessScheduler {
 
     Logger log = LoggerFactory.getLogger(BusinessScheduler.class);

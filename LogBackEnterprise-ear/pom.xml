@@ -37,6 +37,14 @@
                    <!-- <skinnyWars>true</skinnyWars>-->
                     <version>6</version>
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                        <jarModule>
+                            <groupId>org.waastad</groupId>
+                            <artifactId>LogBackEnterprise-jar</artifactId>
+                            <unpack>true</unpack>
+                            <includeInApplicationXml>true</includeInApplicationXml>
+                        </jarModule>
+                    </modules>
                 </configuration>
             </plugin>
         </plugins>
@@ -53,6 +61,12 @@
             <artifactId>LogBackEnterprise-web</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>org.waastad</groupId>
+            <artifactId>LogBackEnterprise-jar</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 </project>

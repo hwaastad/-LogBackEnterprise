@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true" scan="true" scanPeriod="10 seconds">
+    <contextName>JAR</contextName>
     <jmxConfigurator />
 
     <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} TomEE [%thread] %highlight(%-5level) %logger{50} - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} APP JAR [%thread] %highlight(%-5level) %logger{50} - %msg%n</pattern>
         </encoder>
         <withJansi>true</withJansi>
     </appender>
